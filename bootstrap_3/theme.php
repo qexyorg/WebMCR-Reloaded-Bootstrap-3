@@ -7,7 +7,7 @@ $theme = array(
 	"Author" => "Toster_tpl",
 	"AuthorUrl" => "http://webmcr.com",
 	"About" => "Шаблон на основе фреймворка Bootstrap 3.3.6",
-	"Version" => "1.1 [WebMCR Reloaded 1.3.8]"
+	"Version" => "1.2 [WebMCR Reloaded 1.3.9]"
 );
 
 ?>

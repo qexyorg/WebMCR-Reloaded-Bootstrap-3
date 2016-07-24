@@ -66,6 +66,14 @@
 					<input type="password" class="form-control" name="smtp_pass" value="<?php echo $data['CFG']['smtp_pass']; ?>" id="input_smtp_pass" placeholder="<?php echo $this->lng_m['set_mail_smtp_pass_ph']; ?>">
 				</div>
 
+				<div class="form-group">
+					<label class="control-label" for="input_smtp_tls"><?php echo $this->lng_m['set_mail_smtp_tls']; ?></label>
+					<select name="smtp" id="input_smtp_tls" class="form-control">
+						<option value="0"><?php echo $this->lng['no']; ?></option>
+						<option value="1" <?php echo $data['SMTP_TLS']; ?>><?php echo $this->lng['yes']; ?></option>
+					</select>
+				</div>
+
 				<button type="submit" name="submit" class="btn btn-primary btn-block"><?php echo $this->lng['save']; ?></button>
 			</form>
 		</div>
