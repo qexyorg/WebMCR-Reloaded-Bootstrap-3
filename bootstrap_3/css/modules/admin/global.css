@@ -58,6 +58,10 @@
 .adm-info-main .thumbnails .thumbnail h3,
 .adm-info-stats .thumbnails .thumbnail h3 { margin: 0px; margin-bottom: 10px; }
 
+.adm-info-stats .thumbnail table tr.error > td { background-color: #f2dede; }
+
+.adm-info-stats .thumbnail table tr.error:hover > td { background-color: #ebcccc; }
+
 .adm-info-main .thumbnails .thumbnail .ajx-l { margin-top: 0px; }
 
 .adm-info-main .thumbnails .thumbnail .icon-ok { margin-top: 0px; }
@@ -65,6 +69,10 @@
 .adm-info-modules .thumbnails > .span4 {
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+.adm-info-main .thumbnails > li > .thumbnail {
+	padding: 10px;
 }
 
 .adm-info-modules .thumbnails .read-more {
@@ -78,6 +86,24 @@
 .adm-info-modules .thumbnails .title {
 	margin: 8px 0px;
 }
+
+.form-block.new-full .block-footer { font-family: Hattori-Hanzo; margin: 0px 5px; font-size: 12px; color: #777; }
+
+.form-block.new-full .block-footer a:hover { text-decoration: none; }
+
+.form-block.new-full .block-footer > div { display: inline-block; padding: 0px 5px; }
+
+.form-block.new-full .block-footer .date { border-right: 1px solid #eee; }
+
+.form-block.new-full .block-footer .category { border-left: 1px solid #eee; margin-left: -3px; }
+
+.form-block.new-full .block-footer .comments,
+.form-block.new-full .block-footer .views { float: right; border-right: 1px solid #eee; }
+
+.form-block.new-full .block-footer .comments i,
+.form-block.new-full .block-footer .views i { margin-right: 5px; margin-top: 0px; }
+
+.form-block.new-full .block-footer > .readmore { float: right; padding-left: 10px; }
 
 @media (max-width: 400px){
 	.admin-menu-groups > .spl_grp_block .spl-btn { font-size: 12px; }

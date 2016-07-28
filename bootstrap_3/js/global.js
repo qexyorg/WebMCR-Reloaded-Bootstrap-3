@@ -247,7 +247,7 @@ var mcr = {
 					}
 
 					$('.file-manager > .lastfiles').append('<div class="file-line" id="'+ar.uniq+'">'+
-							'<div class="line-uniq"><a href="'+ar.link+'">'+ar.uniq+'</a> <a href="#" rel="tooltip" title="'+lng.change+'" class="file-edit icon-edit"></a></div>'+
+							'<div class="line-uniq"><a href="'+ar.link+'">'+ar.uniq+'</a> <a href="#" rel="tooltip" title="'+lng.change+'" class="file-edit glyphicon glyphicon-edit"></a></div>'+
 							'<div class="line-oldname">'+ar.oldname+'</div>'+
 							'<div class="line-size">'+size+'</div>'+
 							'<div class="line-downloads"><i class="glyphicon glyphicon-download" rel="tooltip" title="'+lng.count_downloads+'"></i> '+ar.downloads+'</div>'+
@@ -684,8 +684,8 @@ $(function(){
 		var text = that.prev('a').text();
 
 		if(!that.hasClass('edit-active')){
-			if(that.hasClass('icon-edit')){ that.removeClass('icon-edit'); }
-			that.addClass('icon-ok edit-active');
+			if(that.hasClass('glyphicon-edit')){ that.removeClass('glyphicon-edit'); }
+			that.addClass('glyphicon-ok edit-active');
 			that.prev('a').remove();
 			$('<input class="file-edit-input" type="text" value="'+text+'">').insertBefore(that);
 			mcr.loading(false);
@@ -717,9 +717,9 @@ $(function(){
 			success: function(data){
 				if(!data._type){ return mcr.notify(data._title, data._message); }
 
-				if(that.hasClass('icon-ok')){ that.removeClass('icon-ok'); }
+				if(that.hasClass('glyphicon-ok')){ that.removeClass('glyphicon-ok'); }
 				if(that.hasClass('edit-active')){ that.removeClass('edit-active'); }
-				that.addClass('icon-edit');
+				that.addClass('glyphicon-edit');
 
 				that.prev('.file-edit-input').remove();
 
