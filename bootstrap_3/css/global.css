@@ -105,7 +105,6 @@ body > .container > .row > .col-md-8 {
 	display: none;
 	background-color: rgba(0,0,0,0.7);
 	padding: 10px;
-	border-radius: 6px 6px 0px 6px;
 }
 
 #js-loader > img {
@@ -670,3 +669,5 @@ table.table td.action input[type="checkbox"] { margin-top: 0px; margin-left: 10p
 .col-md-12 {
 	word-wrap: break-word;
 }
+
+.typeahead { z-index: 1051; }
